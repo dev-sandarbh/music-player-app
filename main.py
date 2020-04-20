@@ -54,7 +54,7 @@ class player(Tk):
             new_root.minsize(350,350)
             new_root.maxsize(350,350)
             new_root.title("About and Credits")
-            new_root.iconbitmap("C:/Users/sandarbh/Desktop/currentProjects/python/pythonProjects/for-practice/music-player-app/music-icons/Hopstarter-Button-Button-Info.ico")
+            new_root.iconbitmap("music-icons/Hopstarter-Button-Button-Info.ico")
 
             s = Scrollbar(new_root)
             t = Text(new_root,width=350,height=350,background="white",foreground="red",font=self._font_style)
@@ -73,7 +73,7 @@ class player(Tk):
             songFiles = []
             print("Your Current Working Directory is: "+str(os.getcwd()))
             # chnaging directory to access music files
-            directory = os.chdir("C:/Users/sandarbh/Desktop/currentProjects/python/pythonProjects/to-github/music-player-app/files")
+            directory = os.chdir("Add/remaining/path/here/music-player-app/files")
             # storing all the music files in a list
             for file in os.listdir(directory):
                 if file.endswith('.mp3') or file.endswith('.ogg') or file.endswith('.wav'):
